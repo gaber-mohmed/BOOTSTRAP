@@ -1,0 +1,268 @@
+* {
+  text-transform: capitalize;
+}
+:root {
+  --qq: #00b2ff;
+  --bar: #cc00ff;
+  --green: #33ff00;
+  --or: #ff4d00;
+}
+ul{
+  list-style: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+/* nav */
+.navbar {
+  background: var(--bar) !important;
+}
+.navbar img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+.navbar .navbar-nav .nav-link {
+  color: #eee;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+.search {
+  color: var(--green);
+  font-weight: bold;
+}
+.search i::before {
+  color: inherit;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 22px;
+  left: 0;
+}
+.offcanvas {
+  background-color: var(--bar);
+}
+
+/* nav end */
+.LANDING {
+  background-color: var(--qq);
+}
+.LANDING {
+  background-color: var(--qq);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  color: var(--or);
+}
+/* .feature */
+.feature div div {
+  margin: 10px auto !important;
+  
+  width: 150px;
+  background-color: var(--or);
+  height: 150px;
+  border-radius: 150px;
+}
+.feature .context {
+  position: relative;
+}
+.feature .context::after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  height: 2px;
+  width: 100px;
+  background-color: var(--qq);
+  right: 30%;
+}
+.icon-holder{
+   height: 179px;
+
+}
+.icon-holder i{
+    left: 50;
+    transform: translateX(-50%);
+}
+.icon-holder .pp{
+    margin-top: 89px;
+    color: #00b2ff;
+}
+.icon-holder .number{
+    color: #eee;
+    font-size: 12rem;
+}
+.row{
+    /* width: calc(100% - 30px); */
+    max-width: 100%;
+}
+.bg{
+    color: var(--or);
+}
+/* .feature */
+/* ourwork */
+.ourwork{
+  background-color: #eee;
+
+
+}
+.ourwork .active{
+  background-color: var(--or);
+  padding: 10px;
+  color: white;
+}
+ul li {
+  margin-top: 20px;
+  margin-bottom:20px;
+  font-weight: bold;
+  
+}
+ul li:not(.active):hover{
+  color: var(--or);
+}
+.ourwork .row div {
+  position: relative;
+  /* background-color: #33ff00; */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* margin: 10px;
+} */
+}
+.see{
+  width: fit-content;
+  padding: 10px;
+  margin:  10px auto;
+}
+
+.see:hover{
+  background: var();
+  color: var(--bar);
+}
+.ourwork .box::before{
+  content: attr(data-wo);
+  position: absolute;
+  /* left: 50%;
+  top: 50%; */
+  background-color: #00f7ff5e;
+  text-align: center;
+  width: 100%;
+  height : 100%;
+  display: flex;
+  align-items: center;justify-content: center;color: white;font-weight: 900;transform: translateX(-100%); transition: 1s;
+
+
+
+
+}
+.ourwork .box:hover:before{
+  transform: translateX(0);
+  font-size: 30px;
+}
+/* .ourwork */
+/* team   */
+.team{
+  background-color: #eee;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.team h3{
+  color: var(--or);
+}
+.team .name{
+  width: 100%;
+  background-color: var(--qq);
+  color: white;
+  font-weight: bold;
+
+}
+.team .box{
+  background-color: white;
+  padding-block-start: 10px;
+  padding-left: 0 ;
+  
+  padding-right: 0 ;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.text-black-50{
+  font-size: 13px;
+}
+.team .box:not(first){
+  /* margin-left: 5px; */
+  border-left: 15px solid #eee;
+  border-top: 15px solid #eee;
+}
+.tochs .row div{
+  border-radius: 8px;
+  box-sizing: border-box;
+  /* margin: 10px; */
+  overflow: hidden;
+  margin-top: 20px;
+
+  
+}
+.btn{
+  width: fit-content;
+  margin-right:auto ;
+  margin-left:auto ;
+}
+@media (min-width:970px) {
+  
+  .subcribe .btn{
+    
+    margin-top: 8px !important;
+    background-color: black;
+    color: #ff4d00;
+    border:none ;
+  }
+}
+.tochs img{
+  border-radius: 10px;
+    border-left: 15px solid #ffffff;
+  border-top: 15px solid #ffffff;
+  box-sizing: border-box;
+}
+.subcribe{
+  padding: 20px;
+  background-color: var(--or);
+}
+.subcribe input{
+  max-height: 40px;
+  border: none;
+  background-color: transparent;
+
+  border-bottom: white 2px solid;
+}
+.subcribe input:focus{
+  
+  outline: none;
+}
+.subcribe input::placeholder{
+  color: white;
+}
+
+
+/* .footer */
+footer{
+  background-color: var(--bar);
+}
+footer img{
+  width: 200px;
+  border-radius: 30px;
+}
+footer li a , footer li{
+  color: rgba(0, 0, 0, 0.383);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+
+
+}
+footer span:first-of-type{
+  color: #00b2ff;
+}
+/* .footer */
